@@ -682,7 +682,7 @@ var runAllAutomation = setInterval(function() {
 	autoPraise();
 	autoBuild();
 	
-	if (gamePage.timer.ticksTotal % 2 === 0) {
+	if (gamePage.timer.ticksTotal % 3 === 0) {
 		autoObserve();
 		autoCraft();
 		autoHunt();
@@ -690,11 +690,11 @@ var runAllAutomation = setInterval(function() {
 		energyControl();
 	}
 	
-	if (gamePage.timer.ticksTotal % 5 === 0) {
+	if (gamePage.timer.ticksTotal % 10 === 0) {
 		autoSpace();
 	}
 	
-	if (gamePage.timer.ticksTotal % 5 === 0) {
+	if (gamePage.timer.ticksTotal % 10 === 0) {
 		
 		autoResearch();
 		autoWorkshop();
