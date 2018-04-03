@@ -694,7 +694,7 @@ var runAllAutomation = setInterval(function() {
 		autoSpace();
 	}
 	
-	if (gamePage.timer.ticksTotal % 10 === 0) {
+	if (gamePage.timer.ticksTotal % 25 === 0) {
 		
 		autoResearch();
 		autoWorkshop();
