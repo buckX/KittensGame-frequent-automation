@@ -680,6 +680,7 @@ var runAllAutomation = setInterval(function() {
 
 	autoNip();
 	autoPraise();
+	autoBuild();		
 	
 	if (gamePage.timer.ticksTotal % 3 === 0) {
 		autoObserve();
@@ -699,7 +700,6 @@ var runAllAutomation = setInterval(function() {
 		autoWorkshop();
 		autoParty();
 		autoTrade();		
-		autoBuild();		
 		
 	}
 
