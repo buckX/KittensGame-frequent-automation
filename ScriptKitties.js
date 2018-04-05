@@ -513,7 +513,7 @@ if (autoCheck[1] != "false") {
 for (var i = 0; i < resources.length; i++) {
     var curRes = gamePage.resPool.get(resources[i][0]);
     var resourcePerTick = gamePage.getResourcePerTick(resources[i][0], 0);
-    var resourcePerCraft = (resourcePerTick * 15);
+    var resourcePerCraft = (resourcePerTick * 4);
 		if (curRes.value > (curRes.maxValue - resourcePerCraft) && gamePage.workshop.getCraft(resources[i][1]).unlocked) {
 		gamePage.craft(resources[i][1], (resourcePerCraft / resources[i][2]));
 		}
