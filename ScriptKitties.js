@@ -490,7 +490,7 @@ function autoTrade() {
 			if (goldResource.value > (goldResource.maxValue - goldOneTwenty)) {
 				if (unoRes.value > 5000  && gamePage.diplomacy.get('leviathans').unlocked && gamePage.diplomacy.get('leviathans').duration != 0) {
 					gamePage.diplomacy.tradeAll(game.diplomacy.get("leviathans"));
-				} else if (titRes.value < (titRes.maxValue * 0.9)  && gamePage.diplomacy.get('zebras').unlocked) {
+				} else if (titRes.value < (titRes.maxValue * 1.1)  && gamePage.diplomacy.get('zebras').unlocked) {
 					gamePage.diplomacy.tradeAll(game.diplomacy.get("zebras"), (goldOneTwenty / 15));
 				}
 			}
@@ -692,7 +692,7 @@ var runAllAutomation = setInterval(function() {
 		autoSpace();
 	}
 	
-	if (gamePage.timer.ticksTotal % 20 === 0) {
+	if (gamePage.timer.ticksTotal % 19 === 0) {
 		
 		autoResearch();
 		autoWorkshop();
