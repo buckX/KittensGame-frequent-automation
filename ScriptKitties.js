@@ -692,7 +692,7 @@ var runAllAutomation = setInterval(function() {
 		autoSpace();
 	}
 	
-	if (gamePage.timer.ticksTotal % 19 === 0) {
+	if (gamePage.timer.ticksTotal % 14 === 0) {
 		
 		autoResearch();
 		autoWorkshop();
